@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.facture{
+    height: auto;
+    width: 375px;
+    background-color: #F8F9FE;
+    margin: auto;
+}
+
+.facture__header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 35px 20px;
+}
+
+.facture__header-title{
+    font-size: 28;
+    font-weight: 400;
+}
+
+
+.facture__personalData{
+    padding: 25px;
+    width: 100%;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: -2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.facture__personalData h3 {
+    margin-bottom: 8px;
+    color: #495671;
+}
+
+.facture__personalData hr {
+    background-color: rgba(73, 86, 113, 0.37);
+}
+
+.facture__personalData-form ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.facture__personalData-form button {
+    height: 40px;
+    width: 155px;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    color: white;
+    background-color: #FD8F25;
+    border: none;
+    border-radius: 25px;
+    margin-left: calc(50% - 77.5px);
+}
+
+.facture__personalData-form ul li input{
+    color: #878787;
+    width: 275px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    padding: 0 15px;
+    margin: 10px 0;
+    background: #F5F7FF;
+    position: relative;
+}
+
+.facture__personalData-form ul li input:hover{
+    border: 2px solid #52D6CC;
+}
+
+.facture__personalData-form ul li label{
+    color: #878787;
+}
+
+
+
+.select__container{
+    display: inline-block;
+    max-width: 275px;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    padding: 0 15px;
+    background: #F5F7FF;
+    position: relative;
+}
+
+.select__container .icon {
+    position: absolute;
+    right: 25px;
+    top: calc(50% - 12.5px);
+	width: 16px;
+    height: 25px;
+	display: block;
+	border-left:2px solid #E3E5EC;
+	
+}
+
+.select__container select {
+    display: none;
+}
+
+.select__container:hover {
+    border: 2px solid #52D6CC;
+}
+
+.hiden {
+    display: none;
+}
+
+
+
+.select-selected {
+    background-color:#F5F7FF;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 45%;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #878787 transparent transparent ;
+  }
+  
+
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #878787 transparent;
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .select-items div,.select-selected {
+    color: #5E5E5E;
+    padding: 8px 16px;
+    border: none;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+
+
+
+  
+  /* Style items (options): */
+  .select-items {
+    position: absolute;
+    background-color: #F5F7FF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color:rgba(85, 218, 201, 0.5);
+  }
+
+
+
+
+
